@@ -1,0 +1,57 @@
+
+<!--pages/cart/cart.wxml-->
+<!--购物车空  -->
+<view class='cartNull' hidden='{{isCart}}'>
+  <image src='../../imageIcon/cart.png'></image>
+  <text>购物车都空了,拿什么爱湖人?</text>
+</view>
+
+<!--购物车不空  -->
+<view class='cartshow' hidden='{{!isCart}}'>
+  <view class='header'></view>
+  <view class='goodsList'>
+    <view wx:for='{{lacart}}' wx:key='{{item}}'>
+    <view class='goodsall'>
+      <!--单选框  -->
+      <view class='laker_left'>
+        <radio bindtap='dxCheck' checked='{{item.check}}' data-id='{{index}}'></radio>
+      </view>
+      <!--商品图  -->
+      <view class='goodsImage'>
+        <image src='{{item.imageUrl}}' class='goods-image'></image>
+      </view>
+      <!--内容  -->
+      <view class='goods-content'>
+        <view class='goods-navigator'>
+          <text class='goods-name'>{{item.title}}</text>
+          <image class='imgDel' data-id='{{index}}' src='../../imageIcon/icon_delete.png' bindtap='Delete'></image>
+        </view>
+        <!--价格  -->
+        <view class='goods-price'>
+          <text class='price'>￥{{item.price}}元</text>
+          <!--数量  -->
+          <view class='btn'>
+            <view class='btn_left' bindtap='delgoods' data-id='{{index}}'>-</view>
+            <input class='input' value='{{item.minCount}}' disabled='disabled'></input>
+            <view class='btn_right' bindtap='addgoods' data-id='{{index}}'>+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+  
+
+  <!--底部结算  -->
+  <view class='total'>
+    <view class='total_text'>
+      <radio bindtap='allchecked' checked='{{qxChecked}}'></radio>
+      <text>全选</text>
+      <text style='padding-left:80rpx;'>合计</text>
+      <text class='pay'>￥{{total}}</text>
+    </view>
+    <view class='total_js' bindlongtap='click'>
+      <text>去结算{{goodsCount}}</text>
+    </view>
+  </view>
+</view>

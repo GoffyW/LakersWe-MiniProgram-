@@ -1,0 +1,22 @@
+<!--logs.wxml-->
+<view class="container">
+<!--  -->
+  <view wx:for="{{teamlist}}"  class='newslist' bindtap='click_item' id='{{item.id}}'>
+    <view class='news'>
+      <!--文字信息  -->
+      <view class='info'>
+        <text class='title'>{{item.title}}</text>
+        <text class='time'> {{item.time}} </text>
+      </view>
+      <!--图片  -->
+      <view class='newsimage'>
+        <image src='{{item.imageUrl}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <!--更多资讯  -->
+  <view class='more'>
+    <text>更多资讯</text>
+  </view>
+</view>

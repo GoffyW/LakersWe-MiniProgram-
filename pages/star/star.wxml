@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='starBox'>
+    <view class='star' wx:for='{{data}}'>
+      <image class='starImg' src='{{item.imageUrl}}'></image>
+      <view class='starInfo'>
+        <view class='starName'>
+          <text>{{item.name}}</text>
+        </view>
+        <view class='starHeight'>
+          <text>身高：{{item.stature}}</text>
+        </view>
+        <view class='starRole'>
+          <text>司职：{{item.role}}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

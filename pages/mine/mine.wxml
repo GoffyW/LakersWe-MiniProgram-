@@ -1,0 +1,44 @@
+<view>
+
+  <!--头像昵称  -->
+  <view class='userinfo' bindtap='bindView'>
+    <view class='loginCir'>
+      <image class='userinfo-avatar' src='{{userInfo.avatarUrl}}' background-size='cover'></image>
+      <view class='loginText'></view>
+    </view>
+    <view class='userInfo-nickname'>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <!--主体内容  -->
+  <view class='contentBg'>
+    <!--第一行  -->
+    <view class='contentHalf'>
+      <!--左  -->
+      <view class='singleBox' bindtap='cartClick'>
+        <image class='boxImg' src='../../imageIcon/cart.png'></image>
+        <view class='boxText'>购物车</view>
+      </view>
+      <!--右  -->
+      <view class='singleBox'bindtap='picClick'>
+        <image class='boxImg' src='../../imageIcon/pic.png'></image>
+        <view class='boxText'>图集</view>
+      </view>
+    </view>
+    <!--第二行  -->
+    <view class='contentHalf' bindtap='ideaClick'>
+      <view class='singleBox'>
+        <image class='boxImg' src='../../imageIcon/idea.png'></image>
+        <view class='boxText'>留言</view>
+      </view>
+      <view class='singleBox' bindtap='videoClick'>
+        <image class='boxImg' src='../../imageIcon/video.png'></image>
+        <view class='boxText'>集锦</view>
+      </view>
+    </view>
+
+
+
+  </view>
+</view>

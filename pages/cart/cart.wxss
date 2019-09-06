@@ -1,0 +1,201 @@
+/* pages/cart/cart.wxss */
+.cartNull{
+  padding: 200rpx 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #999;
+}
+.cartNull image{
+  width: 500rpx;
+  height: 500rpx;
+  margin-bottom: 10px;
+}
+
+
+/*标题头*/
+.header {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+.goodsList{
+  padding-bottom: 100rpx;
+}
+.goodsall {
+  background: #fff;
+  border-bottom: 2px solid #8e44ad;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.goodsall .laker_left {
+  display: inline-block;
+  line-height: 160rpx;
+}
+
+.goodsall image {
+  width: 80px;
+  height: 80px;
+  
+}
+
+.goodsall .goodsImage {
+  display: inline-block;
+  padding-top: 10rpx;
+}
+
+.goods-content {
+  display: flex;
+  flex-direction: column;
+  color: #555;
+  font-size: 13px;
+  padding-left: 10px;
+  height: 100px;
+}
+
+.goods-navigator {
+  height: 122rpx;
+  position: relative;
+}
+
+.goods-name {
+  width: 85%;
+  color: #2c3e50;
+  margin-top: 5px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.price {
+  font-size: 30rpx;
+  color: #ec5151;
+  line-height: 60rpx;
+}
+
+.goodsall .goods-content .good-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.goods-navigator .imgDel {
+  width: 36rpx;
+  height: 36rpx;
+  border: 0;
+  margin: 0;
+  float: right;
+  position: absolute;
+  top:5px;
+  right:0;
+}
+
+.goodsall .goods-content .goods-price .btn {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-right: 6rpx;
+  margin-bottom: 15rpx;
+  width: 160rpx;
+}
+
+.goodsall .goods-content .goods-price .btn input {
+  margin: 0;
+  flex: 4;
+  text-align: center;
+  border-bottom: 1px solid #8e44ad;
+  border-top: 1px solid #8e44ad;
+  font-size: 16px;
+  height: 56rpx;
+  min-height: 56rpx;
+}
+.goodsall .goods-content .goods-price .btn .btn_left{
+  margin: 0;
+  border: 1px solid #8e44ad;
+  border-radius: 20px 0 0 20px;
+  flex: 3;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+}
+.goodsall .goods-content .goods-price .btn .btn_right{
+  margin: 0;
+  border: 1px solid #8e44ad;
+  border-radius: 0 20px 20px 0;
+  flex: 3;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+}
+
+.goodsall .goods-content .goods-price .btn .btn_right .input {
+  border-radius: 10px;
+  background-color: #9b59b6;
+}
+/*底部结算  */
+.total {
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999;
+}
+
+.total .total_text {
+  display: flex;
+  color: #777;
+  flex: 5;
+  line-height: 90rpx;
+}
+
+.total .total_text radio {
+  margin: 20rpx;
+  margin-top: -6rpx;
+}
+
+
+.total .total_text .pay {
+  color: #ec5151;
+  text-align: right;
+}
+
+.total .total_text text {
+  font-size: 36rpx;
+  line-height: 90rpx;
+}
+
+.total .total_js {
+  color: #fff;
+  height: 100rpx;
+  margin: 0;
+  flex: 2;
+  background-color: #7928a7;
+  opacity: 0.9;
+  background-size: 100%;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 36rpx;
+  position: relative;
+}
+.total .total_js image,.total .total_js text{
+  width:100%;
+  height:100%;
+}
+.total .total_js text{
+  position: absolute;
+  left:0;
+  top:0;
+}

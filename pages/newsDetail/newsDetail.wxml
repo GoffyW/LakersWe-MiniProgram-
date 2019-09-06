@@ -1,0 +1,16 @@
+<!--pages/details/detail.wxml-->
+ <scroll-view class='news' scroll-y='true'>
+  <view class='newsDetail' wx:for="{{newslist}}">
+    <text class='title'>{{item.title}}</text>
+    <text class='time'>{{item.time}}</text>
+    <view class='.image'>
+      <image class='img' src='{{item.imageUrl}}'></image>
+    </view>
+    
+    <text class='newsContent'>{{item.message}}</text>
+    <text class='editor'>{{item.edit}}</text> 
+  </view>
+</scroll-view> 
+
+
+

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view>
+  <view class='viewTitle'>
+    <text class='title'>2010湖人总冠军精彩集锦</text>
+  </view>
+  <view class='video'>
+    <video id='videoplay' src='http://pgccdn.v.baidu.com/391050171_3581041859_20170521103005.mp4?authorization=bce-auth-v1%2Fc308a72e7b874edd9115e4614e1d62f6%2F2017-05-21T02%3A30%3A09Z%2F-1%2F%2F801f5758f856757564f58f7836c38de020807f11407ffbcd105de43cd1ac614f&responseCacheControl=max-age%3D8640000&responseExpires=Tue%2C+29+Aug+2017+10%3A30%3A09+GMT&xcode=6a4a239f7d03014d56f8f3f8ac647877aadb6c3b56d78946&time=1531971222&_=1531883665422'
+    danmu-btn='true' enable-danmu='true' danmu-list='{{danmu_list}}'></video>
+  </view>
+  
+  <!--输入框  -->
+  <input type='text' bindblur='bindDatas' placeholder='请输入弹幕' placeholder-class="place-input"></input>
+  <button bindtap='senddanmu'>发送弹幕</button>
+</view>

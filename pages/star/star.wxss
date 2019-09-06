@@ -1,0 +1,38 @@
+/* pages/star/star.wxss */
+.container{
+  text-align: center;
+}
+.starBox{
+  width: 80%;
+}
+.star{
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx auto;
+  border-bottom: 3rpx dashed #7928a7;
+}
+
+.starImg{
+  border: 5px solid #7928a7;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.starInfo{
+  margin: 10px auto;
+  color: #333;
+  line-height: 60rpx;
+}
+.starName{
+  font-weight: bold;
+  font-size: 25px;
+}
+.starHeight{
+  font-size: 30rpx;
+  color: #7928a7;
+}
+.starRole{
+  font-size: 30rpx;
+  color: #7928a7;
+}

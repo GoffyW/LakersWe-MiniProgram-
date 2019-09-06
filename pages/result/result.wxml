@@ -1,0 +1,52 @@
+<!--home.wxml-->
+<view class="container">
+  <!--轮播图  -->
+  <view  class='slide-box'>
+    <swiper indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--标题:最新赛程  -->
+
+  <!--赛程内容  -->
+  <view id='{{item.Schedule_id}}' class='schedule' wx:for="{{teamlist}}" bindtap='idClick'>
+    <!--比赛时间  -->
+    <view class='scheduleTime'>
+      <text>{{item.time}}</text>
+    </view>
+    <view class='scheduleContent'>
+      <!--主场  -->
+      <view class='teamHC'>
+        <!--主场图片  -->
+        <view>
+          <image class='imgHC' src='{{item.imageUrlHC}}'></image>
+        </view>
+        <!--主场名称  -->
+        <view class='teamName'>
+          <text>{{item.teamHC}}</text>
+        </view>
+      </view>
+      <!--比分  -->
+      <view class='score'>
+        <text>{{item.score}}</text>
+        <view class='care'><text>MVP</text></view>
+      </view>
+      <!--客场  -->
+      <view class='teamVF'>
+        <!--客场图片  -->
+        <view >
+          <image class='imgVF' src='{{item.imageUrlVF}}'></image>
+        </view>
+        <!--客场名称  -->
+        <view class='teamName'>
+          <text>{{item.teamVF}}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

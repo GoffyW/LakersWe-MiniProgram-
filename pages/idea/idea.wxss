@@ -1,0 +1,80 @@
+.msg-box {
+  padding: 20px;
+}
+
+.send-box {
+  display: flex;
+}
+.send-box button{
+  background-color: #9b59b6;
+  color: white;
+  border-radius: 30rpx;
+}
+.addIdea{
+  width: 25%;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius:0 60rpx  60rpx 0;
+  color: #fff;
+  margin-left: 5px;
+  background-color: #9b59b6;
+}
+
+.input {
+  width: 70%;
+  background-color: #9b59b6;
+  border: 1px solid #8e44ad;
+  border-radius:60rpx  0 0 60rpx;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 30rpx;
+  color: #fff;
+}
+.ideaView{
+  width: 70%;
+  margin-top: 50rpx;
+}
+.msg-info {
+  margin-top: 250rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #8e44ad;
+  font-size: 30rpx;
+}
+.msg-info image{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
+
+.place-input {
+  color: #fff;
+}
+
+.list-view {
+  margin: 20px;
+}
+.item {
+  margin-top: 10rpx;
+  overflow: hidden;
+  border-bottom: 2px dashed #8e44ad;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 6px;
+}
+
+
+.text1 {
+  float: left;
+  color: #333;
+  font-size: 24px;
+  
+}
+
+.close-btn {
+  float: right;
+  margin: 5px 5px 0 0;
+}

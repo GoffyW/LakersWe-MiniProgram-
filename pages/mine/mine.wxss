@@ -1,0 +1,66 @@
+page{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userinfo{
+  position: relative;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #8e44ad;
+  margin: 0 auto;
+}
+.userinfo-avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.userInfo-nickname{
+  text-align: center;
+  margin-top: 20px;
+}
+.contentBg{
+  width: 100%;
+  padding: 10rpx 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 120px;
+}
+.contentHalf{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.singleBox{
+  width: 35%;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.boxImg{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.boxText{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  color: #333;
+}
+.loginCir{
+  position: relative;
+}
+.loginText{
+  font-size: 18px;
+  color: #f1c40f;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+}

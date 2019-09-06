@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/new/new",
+    "pages/star/star",
+    "pages/result/result",
+    "pages/shop/shop",
+    "pages/idea/idea",
+    "pages/pic/pic",
+    "pages/cart/cart",
+    "pages/video/video",
+    "pages/newsDetail/newsDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8e44ad",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8e44ad",
+    "selectedColor": "#f1c40f",
+    "list": [
+      {
+        "pagePath": "pages/new/new",
+        "text": "新闻",
+        "iconPath": "imageIcon/new.png",
+        "selectedIconPath": "imageIcon/newSelected.png"
+      },
+      {
+        "pagePath": "pages/result/result",
+        "text": "赛况",
+        "iconPath": "imageIcon/schedule.png",
+        "selectedIconPath": "imageIcon/scheduleSelected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "湖人总冠军",
+        "iconPath": "imageIcon/mine.png",
+        "selectedIconPath": "imageIcon/mineSelected.png"
+      },
+      {
+        "pagePath": "pages/star/star",
+        "text": "球星",
+        "iconPath": "imageIcon/star.png",
+        "selectedIconPath": "imageIcon/starSelected.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "周边",
+        "iconPath": "imageIcon/shopping.png",
+        "selectedIconPath": "imageIcon/shoppingSelected.png"
+      }
+    ]
+  }
+}
